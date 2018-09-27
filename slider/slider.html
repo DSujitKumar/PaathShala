@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script type='text/javascript' src='js/jquery/jquery.js'></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css">
     <style type="text/css">
       
     </style>
@@ -645,7 +646,33 @@
 <!-- container5 Starts -->
 <div class="container5">
   <div class="container5-1" >
-    
+    <h1>TESTIMONIALS</h1>
+    <hr>
+    <p> See what people say about our wonderful Site.</p>
+    <div>
+      <div class="mySlides fade">
+    <p>Got an interest of reading novels??~ we've also got a section for novel lovers. We understand reading novels will help you to develop some creative ideas in you and for that we've a section of novels which contains 500+ novels for you to study and fullfill your fantasy. <br><br>@ Sujit Kumar Das</p>
+  </div>
+  <div class="mySlides fade1">
+     <p>Got an interest of reading novels??~ we've also got a section for novel lovers. We understand reading novels will help you to develop some creative ideas in you and for that we've a section of novels which contains 500+ novels for you to study and fullfill your fantasy. <br><br>@ Naveen Kumar Jha</p>
+  </div>
+  <div class="mySlides fade">
+     <p>Got an interest of reading novels??~ we've also got a section for novel lovers. We understand reading novels will help you to develop some creative ideas in you and for that we've a section of novels which contains 500+ novels for you to study and fullfill your fantasy. <br><br>@ Sujit Kumar Das </p>
+  </div>
+  <div class="mySlides fade1">
+     <p>Got an interest of reading novels??~ we've also got a section for novel lovers. We understand reading novels will help you to develop some creative ideas in you and for that we've a section of novels which contains 500+ novels for you to study and fullfill your fantasy.<br><br>@ Shantanu Dash </p>
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
   </div>
 </div>
 <!-- container5 Ends -->
@@ -681,6 +708,27 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 6000); // Change image every 2 seconds
 }
 </script>
 <script type='text/javascript' src='js/jquery.themepunch.plugins.min.js'></script>

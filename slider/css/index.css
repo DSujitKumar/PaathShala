@@ -283,7 +283,7 @@
     .container5{
         background-image: url('https://www.sas.com/en_us/learn/academic-programs/students/_jcr_content/par/styledcontainer_24bc/image.img.jpg/1533556021909.jpg'); 
         background-size: cover; 
-        height: 500px; 
+        height: 600px; 
         width: auto; 
         background-repeat: no-repeat;
     }
@@ -291,5 +291,25 @@
         background-color: rgba(0,0,50,0.7);
         height: 100%;
         width: auto;
+        overflow: hidden;
+        
+        text-align: center;
+    }
+    .container5-1 p{
+        font-size: 18px;
+        color: white;
+    }
+    .container5-1 h1{
+        text-align: center;
+        color: white;
+        font-size: 39px;
+        padding-top: 60px;
+    }
+    .container5-1 hr{
+        text-align: center;
+        background-color: white;
+        height: 3px;
+        width: 100px;
     }
     /*---------------Container5 Ends---------------*/
+    /*---------------*/
