@@ -12,6 +12,7 @@
     <link rel='stylesheet' id='slide-details-css'  href='portfolios/slide-detail/css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='shortcode-css'  href='css/shortcodes.css' type='text/css' media='all' />
     <link rel='stylesheet' id='custom-button-mfast-3-css'  href='css/buttons/limekiln-2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-button-mfast-3-css'  href='css/buttons/pebbles-by-the-sea-5.css' type='text/css' media='all' />
     <link rel='stylesheet' id='custom-button-mfast-3-css'  href='css/buttons/mfast-3.css' type='text/css' media='all' />
     <link rel='stylesheet' id='flexslider-css'  href='sliders/flexslider/css/flexslider.css' type='text/css' media='all' />
     <link rel='stylesheet' id='flexslider-elegant-css'  href='sliders/flexslider-elegant/css/slider.css' type='text/css' media='all' />
@@ -20,275 +21,11 @@
     <link rel='stylesheet' id='rs-captions-css'  href='sliders/revolution-slider/rs-plugin/css/captions.css' type='text/css' media='all' />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script type='text/javascript' src='js/jquery/jquery.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <style type="text/css">
-        body{
-            margin: 0px;
-
-        }
-        .HeaderNav{
-            min-height: 50px;
-            max-height: auto;
-            width: auto;
-            border-bottom: 1px solid gray;
-           
-            padding-right: 10%;
-            padding-left: 10%;
-            padding-top: 15px;
-            color: #a3a4a4;
-        }
-        .NavContent{
-            float: left;
-            padding-right: 20px;
-            font-size: 15px;
-
-            padding: 8px;
-        }
-        .NavContent i{
-            font-size: 13px;
-            padding: 3px;
-        }
-        .socialIcon{
-            font-size: 15px;
-            float: right;
-            padding: 8px;
-            color: #a3a4a4;
-
-        }
-        .socialIcon i:hover{
-            cursor: pointer;
-            color: black;
-        }
-        .si{
-            font-size: 12px;
-            padding-left: 15px;
-            padding-right: 1px;
-            padding-top: 10px;
-            padding-bottom: 8px;
-            float: right;
-            color: #a3a4a4;
-        }
-        .ss:hover{
-            color:#19a1e8;
-            cursor: pointer;
-
-        }
-        .mainNav{
-            background: white;
-            position: sticky;
-            top: -2px;
-            height: 120px;
-            width: auto;
-            padding-left: 5%;
-            padding-right: 5%;
-            z-index: 200;
-            margin-bottom: 20px;
-        }
-        .logoDiv{
-
-            height: 80%;
-            float: left;
-        }
-        .logoDiv img{
-            margin-top: 2%;
-            float: left;
-            height: 100%;
-
-        }
-        .logoDiv h2{
-            margin-left: 20px;
-            float: right;
-        }
-        /*Menu Bar Starts */
-        .menuBar{
-        float: right;
-        
-    }
-    .menuItem{
-        color: #8c8c8c;
-        margin-right: 50px;
-        float: right;
-        font-family: 'Oswald', sans-serif;
-        margin-top: 5%;
-        /*border: 1px solid red;*/
-    }
-
-    .menuItem span{
-        font-size: 14px;
-        padding-left: 13px;
-        padding-right: 13px;
-        letter-spacing: 2px;
-        border: 0px solid white;
-        border-right-width: 5px;
-       border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        
-    }
-    .menuItem span:hover{
-        transform: scale(1.5);
-        color:#67a5fa ;
-        cursor: pointer;
-        transition: all;
-        transition-duration: 0.4s;
-        border: 0px solid #67a5fa;
-        border-right-width: 5px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        
-    }
-    #activated{
-        cursor: pointer;
-        color:#67a5fa ;
-        border: 0px solid #67a5fa;
-        border-left-width: 5px;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-right-width: 5px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-    }
-    /*After Scrolling*/
-    .mainNav-after{
-            background: white;
-            position: sticky;
-            top: -2px;
-            height: 80px;
-            width: auto;
-            padding-left: 5%;
-            padding-right: 5%;
-            z-index: 200;
-            margin-bottom: 20px;
-        }
-        .logoDiv-after{
-
-            height: 80%;
-            float: left;
-        }
-        .logoDiv-after img{
-            margin-top: 2%;
-            float: left;
-            height: 100%;
-
-        }
-        .logoDiv-after h2{
-            margin-left: 20px;
-            float: right;
-        }
-        .menuBar-after{
-        float: right;
-        
-    }
-    .menuItem-after{
-        color: #8c8c8c;
-        margin-right: 50px;
-        float: right;
-        font-family: 'Oswald', sans-serif;
-        margin-top: 4%;
-    }
-
-    .menuItem-after span{
-        font-size: 13px;
-        padding-left: 15px;
-        padding-right: 15px;
-        letter-spacing: 2px;
-        border: 0px solid white;
-        border-right-width: 5px;
-       border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        
-    }
-    .menuItem-after span:hover{
-        transform: scale(1.5);
-        color:#67a5fa ;
-        cursor: pointer;
-        transition: all;
-        transition-duration: 0.4s;
-        border: 0px solid #67a5fa;
-        border-right-width: 5px;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
-        
-    }
-        /*Menu Bar Ends*/
-
-    /*--------------Container 2 start--------------*/
-    .container2{
-        height: 300px;
-        width: auto;
-        
-        background-size: cover;
-    }
-    .facility{
-        width: 20%;
-        height: 80%;
-        margin-top: 4%;
-        margin-bottom:0%;
-        margin-left: 3.7%;
-        
-        float: left;
-        text-align: center;
-    }
-    .facilityImg i{
-        font-size: 60px;
-        color: #9f9f9f;
-    }
-    .facilityHeading h1{
-        font-family: 'Arvo', serif;
-        font-size: 25px;
-    }
-    /*--------------container2 end-----------------*/
-    /*--------------container3 Starts-----------------*/
-    .container3{
-        height: 150px;
-        width: auto;
-        background-color:#f1f1f1;
-        font-family: 'Oswald', sans-serif;
-    }
-    .readMore{
-        height: 70px;
-        margin-top: 60px;
-        margin-right: 150px;
-    }
-    .Discussion p{
-        font-size: 30px;
-        font-weight: normal;
-    }
-    .Discussion{
-        margin-left: 150px;
-    }
-    .Discussion p span{
-        font-size: 13px;
-        font-weight: normal;
-        letter-spacing: 1px;
-        
-    }
-    /*--------------container3 end-----------------*/
-    /*--------------container4 start---------------*/
-    .trendingCourses{
-        height: auto;
-        width: auto;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-    .trendingCoursesHeading{
-      font-size: 35px;
-      text-align: center;
-      width: auto;
-    }
-    .trendingCoursesHeading hr{
-      width: 50px;
       
-      border: 1px solid black;
-    }
-    .trendingCoursesContent{
-      height: 350px;
-      float: left;
-      width: 20.5%;
-      margin-left: 3.5%;
-      margin-bottom: 30px;
-      border:0.5px solid #bebebe;
-    }
-    /*--------------container4 End-----------------*/
     </style>
     <link rel="stylesheet" type="text/css" href="css/scroller.css">
     <link rel="stylesheet" type="text/css" href="css/login.css">
@@ -763,7 +500,7 @@
             <h1>Lecture Notes</h1>
         </div>
         <div class="facilityContent">
-            <p>video lectures. </p>
+            <p>Most built-in webcams are good enough to make video calls, but maybe not as good for video lectures. </p>
         </div>
         
     </div>
@@ -810,17 +547,108 @@
 </div>
 <!-- container3 ends -->
 <!-- Container4 Starts -->
-<div class="trendingCourses ">
+<div class="trendingCourses">
     <dir class="trendingCoursesHeading">
       TRENDING COURSES
-      <hr>
     </dir>
     <div class="trendingCoursesContent">
-      
+      <div class="courseImage" style="background-image: url('https://blogs.gcu.edu/college-of-science-engineering-and-technology/wp-content/uploads/sites/8/2016/02/Learning-Community-778x518.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Become a PHP Master and Make Money Fast</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRprBrr_K2P0ZlcW1nD53RgWvwRawGJzSJOYrblsWHwvDsJ2mwh');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Become a PHP Master and Make Money Fast</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://www.adelaide.edu.au/student/images/new-student-19126.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Angular 2 Essential Training JavaScript</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://www.insidehighered.com/sites/default/server_files/styles/large-copy/public/media/student%20shaming.jpg?itok=oH5df-pC');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Test-Driven Development in PHP with PHPUnit</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('http://blog.connectionsacademy.com/wp-content/uploads/middle-school-transition-1.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>WordPress: Creating Custom Plugins with PHP</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://credissimo.mk/uploads/images/studenti.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Building a Slack Bot with Node.js Microservices</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://blogs.gcu.edu/college-of-science-engineering-and-technology/wp-content/uploads/sites/8/2016/02/Learning-Community-778x518.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Why I Use Both PHPStorm and Sublime Text</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
+    </div>
+    <div class="trendingCoursesContent">
+      <div class="courseImage" style="background-image: url('https://blogs.gcu.edu/college-of-science-engineering-and-technology/wp-content/uploads/sites/8/2016/02/Learning-Community-778x518.jpg');">
+        
+      </div>
+      <div class="courseContent">
+        <h2>Become a PHP Master and Make Money Fast</h2>
+      </div>
+      <div style="text-align: center; padding: 20px; letter-spacing: 1px;">
+        <a href="#"  class="btn btn-xlarge  btn-pebbles-by-the-sea-5 ">Read Now</a>
+      </div>
     </div>
     
 </div>
 <!-- container4 Ends -->
+<!-- container5 Starts -->
+<div class="container5">
+  <div class="container5-1" >
+    
+  </div>
+</div>
+<!-- container5 Ends -->
 <!-- ******************************End Body************************************* -->
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};
