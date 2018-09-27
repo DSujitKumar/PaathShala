@@ -1,0 +1,54 @@
+.navBar1{
+		
+		height: 80px;
+		width: 100%;
+		z-index: 1;
+		position: sticky;
+  top: 10px;
+	}
+	.navBar1-after{
+		height: 80px;
+		width: 100%;
+		background: rgba(10,3,22,0.4);
+		box-shadow: 3px -1px 20px 2px rgba(0,0,0,0.75);
+		z-index: 1;
+		position: sticky;
+  top: 10px;
+	}
+	.logo{ 
+		float: left;
+		height: 70px;
+		min-width: 18%;
+		max-width: 23%;
+		margin-left: 70px;
+		background-size: cover;
+
+	}
+	.logo img{
+		margin-top: 2%;
+		height: 80px;
+		width: auto;
+	}
+	.menuBar{
+		float: right;
+	}
+	.menuItem{
+		color: white;
+		margin-right: 50px;
+		float: right;
+		font-family: 'Oswald', sans-serif;
+		margin-top: 5%;
+	}
+
+	.menuItem span{
+		font-size: 15px;
+		padding-left: 30px;
+		letter-spacing: 2px;
+	}
+	.menuItem span:hover{
+		transform: scale(1.5);
+		color:orange ;
+		cursor: pointer;
+		transition: all;
+		transition-duration: 0.4s;
+	}

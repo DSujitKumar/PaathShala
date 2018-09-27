@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+/*My Own Code*/
+/*.video_div{
+  position: absolute;
+  max-width: 100%;
+  max-height: 90%;
+  overflow: hidden;
+}*/
+body{
+  background-color: #feeaff;
+}
+.socialContainer{
+  width: 100%;
+  height: 30px;
+  background: #1e0a47;
+  color: white;
+  padding-left: 30px;
+}
+.social{
+  margin: 5px;
+  float: left;
+  height: 32px;
+  width: 32px;
+}
+.active{
+  transform: scale(1.3);
+}
+.contact{
+  float: right;
+  font-size: 15px;
+  padding-top: 5px;
+  margin-right: 20px;
+}
+.contact button{
+  height: 23px;
+  width: auto;
+  background-color: #1b0b60;
+  color: white;
+
+}
+.contact button:hover{
+  cursor: pointer;
+}
+.Slide-Image{
+  position: absolute;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background: url('img/pencil.jpg');
+  z-index: -100;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.Color-background{
+  position: absolute;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background: rgba(30,10,71,0.5);
+   z-index: -99;
+    color: white;
+}
+.Color-background h1{
+  position: relative;
+  font-size: 50px;
+  margin-top: 270px;
+  margin-left: 50px;
+  color: white;
+  font-weight: bold;
+}
+.Color-background p{
+  position: relative;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #686767;
+  font-weight: bold;
+}
+.Color-background button{
+  background-color: #db850b;
+  border: none;
+  position: relative;
+margin-left: 50px;
+padding:10px 20px 10px 20px;
+color: white;
+font-size: 20px;
+font-weight: bold;
+}
+/*quick links start*/
+body{
+  background-color:white;
+}
+.mainCont{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:36.59% 3% 0 3%;
+
+
+}
+.subCont{
+  list-style: none;
+  box-shadow: 3px -1px 20px 0px rgba(0,0,0,0.75);
+  /*background-color:rgba(220,220,220,0.8);*/
+  background: rgba(255,255,255,0.3);
+  width:350px;
+  height: 250px;
+  overflow:hidden;
+  margin: 3px;
+  border-radius:5px;
+  transition:all 0.6s;
+  border: 1px solid grey;
+}
+.subCont p{
+  padding: 15px;
+}
+.subCont:hover{
+  transform:scale(1.02);
+  box-shadow:5px 1px 20px black,6px 1px 30px darkgrey;
+}
+h5{
+  text-align:center;
+  transition:all 0.4s;
+  padding:10px;
+  margin:0px;
+  height:20%;
+  vertical-align:center;
+}
+.dp{
+  background-color:white;
+  height:100%;
+  transition: all 0.3s;
+  margin:0px;
+  text-align: center;
+}
+.subCont:hover .dp{
+  color:orange;
+
+}
+.subCont:hover h5{
+  background-color:orange;
+}
+/*quick links ends*/
+.mid-div{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+#hr1{
+  position:absolute;
+  width: 50%;
+  right: 40px;
+  top: 13%;
+  height: 3px;
+  background-color: grey;
+
+}
+.courses{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  margin-top: 100px;
+}
+/*Course slider starts*/
+* {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 90%;
+        margin: 100px auto;
+        margin-left: 5%;
+    }
+
+    .slick-slide {
+      margin: 0px 10px;
+      overflow: hidden;
+    }
+    .slick-slide h1{
+      font-size: 25px;
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-slide:hover img{
+     transform:scale(1.02);
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .4s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .slider div img{
+      min-width: 100%;
+      min-height: 200px;
+      max-height: 200px;
+    }
+    .slider div p{
+      
+    }
+/*Course slider ends*/
+
+/*Side nav*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*My Own code ends*/
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
