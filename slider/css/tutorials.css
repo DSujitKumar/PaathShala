@@ -1,0 +1,15 @@
+body{
+	margin: 0px;
+}
+.tutoContent{
+	height: 800px;
+	width: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.videoT{
+	height: 300px;
+	position: absolute;
+	width: 80%;
+	
+}

@@ -24,6 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script type='text/javascript' src='js/jquery/jquery.js'></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" type="text/css" href="css/slideshow.css">
     <style type="text/css">
       
@@ -56,8 +57,8 @@
     <div class="logoDiv" id="logoDiv"><img src="images/logo2.png"><!-- <h2><span>Paath</span>shala</h2> --></div>
     <div class="menuBar" id="menuBar">
     <div class="menuItem" id="menuItem">
-      <span id="activated">HOME</span>
-      <span>TUTORIAL</span>
+      <a href="slider.html"><span id="activated">HOME</span></a>
+      <a href="tutorials.html"><span>TUTORIAL</span></a>
       <span>BOOKS</span>
       <span>PROJECTS AND SEMINARS</span>
       <span>FORUM</span>
@@ -728,7 +729,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 6000); // Change image every 2 seconds
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
 }
 </script>
 <script type='text/javascript' src='js/jquery.themepunch.plugins.min.js'></script>

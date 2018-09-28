@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorials</title>
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="shortcut icon" href="images/logo1.ico">
+	<link rel="stylesheet" type="text/css" href="css/scroller.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/tutorials.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="HeaderNav">
+    <div class="NavContent"><i class="fas fa-phone"></i> +91 7377115763</div>
+    <div class="NavContent"><i class="fas fa-at"></i> paathshala@gmail.com</div>
+    <div class="socialIcon ss" >Sign up</div>
+    <div class="socialIcon">|</div>
+    <div class="socialIcon ss" id="myBtn">Sign in</div>
+    <div class="si"><i class="fas fa-user-lock"></i></div>
+    <div class="socialIcon">&#183;</div>
+    <div class="socialIcon "> <i class="fab fa-google"></i></div>
+    <div class="socialIcon "> <i class="fab fa-facebook-f"></i></div>
+    <div class="socialIcon "> <i class="fab fa-linkedin-in"></i></div>
+    <div class="socialIcon "> <i class="fab fa-twitter"></i></div>
+
+    
+
+</div>
+
+<div class="mainNav" id="mainNav">
+    <div class="logoDiv" id="logoDiv"><img src="images/logo2.png"><!-- <h2><span>Paath</span>shala</h2> --></div>
+    <div class="menuBar" id="menuBar">
+    <div class="menuItem" id="menuItem">
+      <a href="slider.html"><span>HOME</span></a>
+      <a href="tutorials.html"><span id="activated">TUTORIAL</span></a>
+      <span>BOOKS</span>
+      <span>PROJECTS AND SEMINARS</span>
+      <span>FORUM</span>
+      <span>BLOGS</span>
+      <span>ABOUT</span>
+    </div>
+  </div>
+</div>
+<!-- Sign in body starts -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close"><i class="fas fa-times-circle"></i></span>
+    </div>
+    <form>
+      <center>
+    <h2>
+      <a href="#homepage">Login</a>
+    </h2>
+  </center>
+  <hr>
+    <center>
+      <div> 
+        <input type="text" name="username" placeholder="Username" value="">
+        <input type="password" name="password" placeholder="Password">
+       </div>
+    </p>
+      <input type="reset" value="Reset" id="resetbtn"> <button>Login</button>
+      <br>
+      <p class="a-link"><a href="#forget-password">Forget password?</a>
+        <p class="a-link"><a href="signuppage.html">Register Now</a>
+    </center>
+    </form>
+  </div>
+</div>
+
+<!-- Sign in body ends -->
+<!-- Section2 starts -->
+<div class="tutoContent" style="background-image: url('images/backgrounds/blueline.png');">
+	<div class="videoT" style="background-image: url('images/backgrounds/blueline.png');">
+		<div class="Vl">
+			
+		</div>
+	</div>
+	<div class="notesT">
+		<div class="Nl">
+			
+		</div>
+	</div>
+	
+</div>
+<!-- Section2 ends -->
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if ((document.body.scrollTop > 70 || document.documentElement.scrollTop > 70)) {
+        document.getElementById("mainNav").className = "mainNav-after";
+        document.getElementById("logoDiv").className = "logoDiv-after";
+        document.getElementById("menuBar").className = "menuBar-after";
+        document.getElementById("menuItem").className = "menuItem-after";
+    } else {
+        document.getElementById("mainNav").className = "mainNav";
+        document.getElementById("logoDiv").className = "logoDiv";
+        document.getElementById("menuBar").className = "menuBar";
+         document.getElementById("menuItem").className = "menuItem";
+    }
+}
+</script>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
