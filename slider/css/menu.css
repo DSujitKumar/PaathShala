@@ -138,6 +138,7 @@
             z-index: 200;
             margin-bottom: 20px;
         }
+        
         .logoDiv-after{
 
             height: 80%;
@@ -164,7 +165,10 @@
         font-family: 'Oswald', sans-serif;
         margin-top: 4%;
     }
-
+    .menuItem-after a{
+        text-decoration: none;
+        color: #8c8c8c;
+    }
     .menuItem-after span{
         font-size: 13px;
         padding-left: 15px;
