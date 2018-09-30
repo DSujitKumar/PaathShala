@@ -136,7 +136,7 @@ ul{
 }
 .FrontDiv #span1{
 	padding-top: 150px;
-	padding-left: 100px;
+	padding-left: 120px;
 	 
 }
 #l1{
@@ -144,12 +144,47 @@ ul{
 	font-size: 15px;
 	color: #9b9999;
 }
+#l2{
+	font-size: 22px;
+	color: #fff;
+}
+
+#l3{
+	font-size: 40px;
+	margin-top: 20px;
+	color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: 1px;
+}
+#eBtn{
+	height: 20px;
+	width: 120px;
+	border: 1.5px solid #1a2fb0;
+	font-size: 15px;
+	padding: 7px 25px 7px 25px;
+	margin-top: 10px;text-align: center;
+	border-radius: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #1a2fb0;
+	transition: all;
+    transition-duration: 0.4s;
+}
+#eBtn:hover{
+	background-color: #1a2fb0;
+	color: white;
+	cursor: pointer;
+}
 .blogHead{
 	position: relative;
-	height: 400px;
-	width: 100%;
+	height: 120px;
+	width: auto;
 	margin-top: 620px;
+	text-align: center;
+	padding: 50px;
 	background-color: white;
+}
+.blogHead h1{
+	font-size: 20px;
 }
 /*Media Queries*/
 

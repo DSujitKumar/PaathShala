@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/blog.css"> 
 	<link rel="stylesheet" href="css/footer css.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +44,11 @@
 		</div>
 		<div class="FrontDiv" id="FrontDiv">
 			<div id="span1">
-				<span id="l1">Easy Way to Gather Knowledge</span>
+				<span id="l1">Easy Way to Gather <h id="l2">knowledge</h></span><br><br>
+				<div id="l3">Research on Subjects,</div>
+				<div id="l3">Take a pinch of other,</div>
+				<div id="l3">Create your OWN.</div><br>
+				<div id="eBtn">EXPLORE SOME &nbsp; <i class="fas fa-arrow-right"></i></div>
 			</div>
 		</div>
   
@@ -51,7 +56,8 @@
 
     <!-- The content of your page would go here. -->
     <div class="blogHead">
-    	
+    	<h1>A blog is only as interesting as the interest shown in others</h1>
+    	<span>A great collection of Technology for your need. <br>Gather the knowledge as much as possible.</span>
     </div>
 
     <footer class="footer-distributed" style="background-image: url(images/backgrounds/footerBack.jpg);background-color: rgba(0,0,50,0.6);z-index: 2">
@@ -131,13 +137,12 @@ window.requestAnimationFrame = window.requestAnimationFrame
  || function(f){setTimeout(f, 1000/60)}
  
 var bubble1 = document.getElementById('FrontImg')
-var FrontDi = document.getElementById('FrontDiv')
 
  
 function parallaxbubbles(){
  var scrolltop = window.pageYOffset;
- bubble1.style.top = -scrolltop *0.2 + 'px'
- FrontDi.style.top = -scrolltop *0.3 + 'px'
+ bubble1.style.top = -scrolltop *0.3 + 'px'
+ 
  
 }
  
