@@ -3,285 +3,155 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Blog Template</title>
+  <title>Blog</title>
+  <link rel="shortcut icon" href="images/logo1.ico">
   <meta name="viewport" content="width=device-width">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700|Poiret+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  
-      <style type="text/css">
-      	
-body{
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-	line-height: 1.4em;
-	color: #222;
-	background: #474747;
-	font-family: 'Lato', sans-serif;
-}
-
-img{
-	max-width: 100%;
-	height: auto;
-	border-radius: 3px;
-}
-
-a{
-	text-decoration: none;
-	color: inherit;
-}
-
-/* Grid */
-
-.section {
-	clear: both;
-	padding: 0;
-	margin: 0;
-}
-
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-.span_3_of_3 {
-	width: 100%;
-}
-.span_2_of_3 {
-	width: 66.1%;
-}
-.span_1_of_3 {
-	width: 32.2%;
-}
-
-/* Header & Navigation */
-
-header{
-	max-width: 100%;
-	background: #222; /*FallBack*/
-	background: rgba(0,0,0,.6);
-	padding: 2px;
-}
-
-nav{
-	width: 100%;
-	margin-bottom: 1em;
-	background: #323232;
-	font-family: 'Poiret One', cursive;
-}
-
-.logo{
-	text-align: center;
-	color: #fff;
-	font-family: 'Poiret One', cursive;
-	padding: 5px;
-}
-.logo img{
-	height: 100px;
-
-}
-
-ul{
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	color: #fff;
-	text-align: center;
-	-webkit-transition: max-height 0.5s;
-	transition: max-height 0.5s;
-}
-
-.nav-item{
-	display: inline-block;
-	padding: 10px;
-	font-size: 1.1em;
-	font-weight: bold;
-	letter-spacing: 1px;
-	-webkit-transition: background .5s;
-	transition: background .5s
-}
-
-.nav-item:hover{
-	background: #474747;
-	cursor: pointer;
-}
-
-.menu-bar{
-	width: 100%;
-	-webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-	background: #2d2d2d;
-	text-align: left;
-	padding: 15px 20px;
-	color: #fff;
-	font-size: 1.4em;
-	cursor: pointer;
-	display: none;
-}
-
-.hamburger-icon{
-	float: right;
-	clear: both;
-	margin-top: -5px;
-	font-size: 1.4em;
-}
-
-/* Blog Posts */
-
-.container{
-	max-width: 1020px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-.blog-post{
-	background: #fff;
-	margin: 0 auto 2em auto;
-	padding: 35px 30px;
-	box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
-}
-
-.side-post{
-	background: #fff;
-	margin: 0 auto 1.5em auto;
-	width: 15em;
-	padding: 20px;
-}
-
-.blog-content{
-	font-size: 1em;
-	border-left: 5px solid #8EE5EE;
-	padding-left: 15px;
-}
-
-.side-content{
-	font-size: .9em;
-	margin-top: 8px;
-	margin-bottom: 0;
-}
-
-.blog-title{
-	font-size: 2.5em;
-	margin-top: 5px;
-}
-
-.date{
-	font-size: 1em;
-	font-weight: 400;
-	color: #9C9C9C;
-	margin-top: -10px;
-	text-decoration: underline;
-	text-decoration-color: currentColor;
-}
-
-.post-link{
-	color: #009ACD;
-	font-style: italic;
-	transition: all 0.4s;
-}
-
-.post-link:hover{
-	color: #005c7b;
-	text-decoration: underline;
-	text-decoration-color: currentColor;
-	cursor: pointer;
-}
-
-/* Button */
-
-.button{
-	display: block;
-	padding: 15px 20px;
-	margin-top: .8em;
-	background: #009ACD;
-	text-align: center;
-	color: #fff;
-	font-size: 1.4em;
-	border-radius: 3px;
-	transition: all .4s ease-in;
-}
-
-.button:hover{
-	background: #005c7b;
-}
-
-/*Media Queries*/
-
-/* @900px*/
-@media only screen and (max-width: 56.25em) {
-	.col{ margin: 1% 0 1% 0%;}
-	.span_3_of_3, .span_2_of_3, .span_1_of_3{ width: 100%; }
-	.side-post{ width: 42%;
-			   float: left;
-			   margin: -2% 0 1% 1.6%;}
-}
-
-/* @685px*/
-@media only screen and (max-width: 42.813em) {
-	.side-post{ width: auto;
-				padding: 15px;
-			    margin: -2% auto 8% auto; }
-	.blog-title{ font-size: 1.95em; }
-	.date{ font-size: .9em; }		
-}
-
-/* @480px */
-@media only screen and (max-width: 30em){
-	nav ul{ max-height: 0; }
-	.reveal{ max-height:19em; }
-	nav ul .nav-item{ -webkit-box-sizing: border-box;
-		 			  -moz-box-sizing: border-box;
-     				  -ms-box-sizing: border-box;
-        			  box-sizing: border-box;
-					  width:100%;
-		 			  padding: 15px; }
-	
-	.menu-bar{ display: block; }
-
-}
-
-/* @380px*/
-@media only screen and (max-width: 23.75em) {
-	.blog-content, .post-link{ font-size: .9em; }
-	.side-content{ font-size: .8em; }
-	.button{ padding: 10px 15px; }
-	.nav-item{ font-size: 1.2em; }
-}
-      </style>
-  
+  <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/blog.css"> 
+	<link rel="stylesheet" href="css/footer css.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-  <header>
-		  <div class="logo"><img src="images/logo4.png"></div>
-	</header>
+<!--   <header>
+		  <div class="logo"><img src="images/logo4.png" height="100px"></div>
+	</header> -->
 	
 	<nav>
+		<img src="images/logo4.png" height="69px" style="float: left; margin-left: 70px; margin-top:0px;">
   			<ul>
-				    <li class="nav-item"><a href="#" >HOME</a></li>
-				    <li class="nav-item"><a href="#" >TUTORIAL</a></li>
-				    <li class="nav-item"><a href="#">PROJECTS AND SEMINARS</a></li>
-    				<li class="nav-item"><a href="#" >FORUM</a></li>
-    				<li class="nav-item"><a href="#">BLOGS</a></li>
-    				<li class="nav-item"><a href="#" >ABOUT</a></li>
-    				<li class="nav-item"><a href="#" >CONTACT</a></li>
-    				<li class="nav-item"><a href="#" >SIGN IN</a></li>
+				    <li class="nav-item"><a href="index.html" >Home</a></li>
+				    <li class="nav-item"><a href="tutorials.html" >Tutorials</a></li>
+				    <li class="nav-item"><a href="#">Projects and Seminars</a></li>
+    				<li class="nav-item"><a href="#" >Forum</a></li>
+    				<li class="nav-item"><a href="blog.html">Blogs</a></li>
+    				<li class="nav-item"><a href="#" >About</a></li>
+    				<li class="nav-item"><a href="#" >Ccontact</a></li>
+    				<li class="nav-item"><a href="#" >Sign in</a></li>
 			  </ul>
-				  <div class="menu-bar">Menu
+				  <div class="menu-bar">
 					    <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
 			  </div>
 		</nav>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+		<div class="FrontImg" id="FrontImg" style="background-image: url(images/backgrounds/blog.png);">
+			
+			
+		</div>
+		<div class="FrontDiv" id="FrontDiv">
+			<div id="span1">
+				<span id="l1">Easy Way to Gather Knowledge</span>
+			</div>
+		</div>
   
+		<!-- Footer -->
 
+    <!-- The content of your page would go here. -->
+    <div class="blogHead">
+    	
+    </div>
+
+    <footer class="footer-distributed" style="background-image: url(images/backgrounds/footerBack.jpg);background-color: rgba(0,0,50,0.6);z-index: 2">
+      
+
+      <div class="footer-left">
+
+        <img src="images/logo4.png" height="60px" alt="Paathshala Logo">
+    
+        <p class="footer-links">
+          · <a href="#">Home</a><br>
+          ·
+          <a href="#">Notes</a><br>
+          ·
+          <a href="#">Video Lecture</a><br>
+          ·
+          <a href="#">Blog</a><br>
+          ·
+          <a href="#">Forum</a><br>
+          ·
+          <a href="#">Contact Us</a><br>
+        </p>
+      
+        <p class="footer-company-name">Paathshala &copy; 2018</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Mancheswar</span> Bhubaneswar, Odisha</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 7377115763</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support_paathshala@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Paathshala is an e-learning website where you can learn with ease.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+    </footer>
+
+<!-- footer ends -->
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script  src="js/index.js"></script>
 
+<script>
+ 
+// Create cross browser requestAnimationFrame method:
+window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFramex
+ || function(f){setTimeout(f, 1000/60)}
+ 
+var bubble1 = document.getElementById('FrontImg')
+var FrontDi = document.getElementById('FrontDiv')
 
+ 
+function parallaxbubbles(){
+ var scrolltop = window.pageYOffset;
+ bubble1.style.top = -scrolltop *0.2 + 'px'
+ FrontDi.style.top = -scrolltop *0.3 + 'px'
+ 
+}
+ 
+window.addEventListener('scroll', function(){ // on page scroll
+ requestAnimationFrame(parallaxbubbles) // call parallaxbubbles() on next available screen paint
+}, false)
+ 
+ window.scroll({
+  top: 0, 
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+</script>
 
 
 </body>
