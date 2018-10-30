@@ -101,6 +101,7 @@
 		}
 		.card .poster img{
 			width: 100%;
+			background-size: cover;
 			transition: 0.5s;
 		}
 		.card:hover .poster img{
@@ -136,7 +137,19 @@
 			padding: 10px;
 		}
 		.details button{
+			border: 2px solid red;
+			padding: 10px;
+			color: white;
+			background-color: rgba(20,30,40,0.8);
+			font-size: 15px;
+			border-radius: 10px;
 			margin-bottom: 20px;
+		}
+		.details button:hover{
+			border-color: #1d53b5;
+			transition-duration: 1s;
+			background-color: #0e0a46;
+			cursor: pointer;
 		}
 		.left{
 			top: 50px;
