@@ -84,11 +84,29 @@
 <!-- Sign in body ends -->
 <div class="mainV" style="background-image: url(images/others/back.jpg);">
   <h2>Get in Touch</h2>
+  <h3>Feel free to contact us on your queries and <br> we will get back to you as soon as possible.</h3>
 	<div class="backdiv">
 		<h2>Contact Info</h2>
 	</div>
   <div class="frontdiv">
-    
+    <h2>Send Us a Message</h2>
+    <form id="contact-form" class="form" action="#" method="POST" role="form">
+                  
+                  <input type="text"  placeholder="Name" class="form-control" id="name" name="name"  required>
+            
+                 
+                  <input type="email"  placeholder="Email" class="form-control" id="email" name="email"  required>
+              
+                   <input type="phone"  placeholder="Phone" class="form-control" id="phone" name="phone" >
+
+                  <input type="text" placeholder="Subject"  class="form-control" id="subject" name="subject">
+              
+                  
+                  <textarea rows="5"  placeholder="Message..." cols="50" name="message" class="form-control" id="message" tabindex="4" required></textarea>   
+
+                  <button type="submit" class="btn">Send Message</button>
+            
+          </form>
   </div>
 </div>
 <!-- Footer -->

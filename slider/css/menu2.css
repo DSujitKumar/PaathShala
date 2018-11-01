@@ -27,7 +27,7 @@ header{
 
 nav{
 	width: 100%;
-	z-index: 2;
+	 z-index: 100;
 	
 	font-family: 'Poiret One', cursive;
 	position: sticky;
@@ -71,7 +71,7 @@ ul{
   font-family: 'Charmonman', cursive;
   font-weight: bold;
   letter-spacing: 0.05em;
-
+z-index: 100;
 
 }
 
